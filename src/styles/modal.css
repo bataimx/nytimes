@@ -1,0 +1,6 @@
+#modal .close{
+  outline: none;
+}
+#modal .modal-content{
+  border-radius: 0;
+}

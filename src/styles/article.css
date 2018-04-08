@@ -1,0 +1,33 @@
+.article-inner{
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--gray);
+  background-position: center center;
+  min-height: calc(50vh - 50px);
+  color: var(--white);
+  overflow: hidden;
+  cursor: pointer;
+}
+.article-wrapper{
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+.article-inner:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  display: block;
+  z-index: 0;
+  background: linear-gradient(to top, #232323, transparent);
+  opacity: 0.7;
+}
+.article-wrapper:hover{
+  border-color: var(--blue);
+}
+.article-content{
+  z-index: 1;
+}
