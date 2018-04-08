@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getThumb, openModal } from '../utilies';
+import { getThumb, openModal, dateConvert } from '../utilies';
 import {domain} from '../config.json';
 import '../styles/modal.css';
 
@@ -30,7 +30,7 @@ class Modal extends Component {
               </button>
               <h3 className="title mb-0">{source}</h3>
               <div className="info font-weight-light font-italic mb-3">
-                <small>{pub_date}</small>
+                <small>{dateConvert(pub_date)}</small>
               </div>
               <div className="row">
                 <div className="col-sm-8 offset-sm-2 mt-3 mb-3">

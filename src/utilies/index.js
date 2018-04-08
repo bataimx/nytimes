@@ -11,3 +11,10 @@ export function openModal(){
   }
   window.$('#modal').modal();
 }
+export function dateConvert(pub_date){
+  if (!pub_date) {
+    return false;
+  }
+  let dt = new Date(pub_date);
+  return `${dt.getDate()}-${dt.getMonth()}-${dt.getFullYear()}`;
+}

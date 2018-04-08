@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/article.css';
-import { getThumb } from '../utilies';
+import { getThumb, dateConvert } from '../utilies';
 import {domain} from '../config.json';
 
 class Article extends Component {
@@ -24,7 +24,7 @@ class Article extends Component {
             <div className="article-content">
               <h3 className="title">{source}</h3>
               <div className="info font-weight-light font-italic">
-                <small>{pub_date}</small>
+                <small>{dateConvert(pub_date)}</small>
               </div>
               <div className="snippet">
                 <p>{snippet}</p>
